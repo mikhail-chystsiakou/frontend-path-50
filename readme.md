@@ -8,6 +8,6 @@ Mastering HTML+CSS by doing 50 live-coding youtube projects.
 
 | Date                | Project                                                      | Do                                                           | Redo                                                         |
 | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 01 <br />02.09.2022 | [Price Comparison Page](fr02_HTML-CSS-Price-Comparison-Table)<br />Source: [Web Dev Simplified](https://youtu.be/M_bhZEY6_kM?t=20) | <img src="fr02_HTML-CSS-Price-Comparison-Table/do/result.png" style="width:300px" /> Timing: **46min** | <img src="fr02_HTML-CSS-Price-Comparison-Table/redo/result.png" style="width:300px" /> Timing: **54min** |
+| 01 <br />02.09.2022 | [Price Comparison Page](fr02_HTML-CSS-Price-Comparison-Table)<br />Source: [Web Dev Simplified](https://youtu.be/M_bhZEY6_kM?t=20) | <img src="fr01_HTML-CSS-Price-Comparison-Table/do/result.png" style="width:300px" /> Timing: **46min** | <img src="fr01_HTML-CSS-Price-Comparison-Table/redo/result.png" style="width:300px" /> Timing: **54min** |
 |                     |                                                              |                                                              |                                                              |
 
