@@ -2,8 +2,6 @@
 
 Original: [Web Dev Simplified](https://youtu.be/M_bhZEY6_kM?t=20)
 
-Timing: 46min
-
 Goal             |  Result
 :-------------------------:|:-------------------------:
 <img src="reverse_engineered/goal.png" style="width:300px;display:inline-block" />  | <img src="reverse_engineered/result.png" style="width:300px;display:inline-block" />
