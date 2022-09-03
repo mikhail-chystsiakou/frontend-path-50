@@ -1,0 +1,123 @@
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	padding: 20px 60px;
+	overflow: hidden !important;
+}
+:root{
+	--base-color: #555;
+	--secondary-color: #C36CBB;
+}
+header{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-grow: 1;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+}
+.logo img {
+	margin-right: 10px;
+}
+
+.nav{
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.nav a {
+	text-decoration: none;
+	color: var(--base-color);
+	font-size: 1.2rem;
+	cursor: pointer;
+	color: var(--base-color);
+}
+
+main {
+	display: flex;
+}
+.adv{
+	margin: 150px auto;
+	flex-basis: 50%;
+}
+.adv .heading{
+	
+	font-size: 2rem;
+	color: var(--base-color);
+}
+.adv .description{
+	color: var(--base-color);
+	font-size: 1.3rem;
+}
+.image-container{
+	flex-basis: 50%;
+}
+.button-container{
+	display: flex;
+	flex-direction: row;
+	margin-top: 60px;
+	gap: 20px
+}
+.button {
+	padding: 10px 0;
+	width: 170px;
+	border: 2px solid var(--secondary-color);
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+.button.white {
+	background-color: white;
+	color: var(--secondary-color);
+}
+.button.pink {
+	color: white;
+	background-color: var(--secondary-color);
+}
+
+.image-container {
+	margin-top: 60px;
+
+}
+.dots {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+.image {
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+	animation: image-animation 1s;
+}
+
+@keyframes image-animation {
+	0% {
+		transform: translateY(-100px);
+		filter: opacity(0%);
+	}
+	100% {
+		transform: translateY(0px);
+		filter: opacity(100%);
+	}
+}
+.small-eclipse, .mid-eclipse, .big-eclipse {
+	position: absolute;
+	z-index: -1;
+}
+.small-eclipse {
+	bottom: 0;
+	left: 10%
+}
+.mid-eclipse {
+	top: 20%;
+	right: 35%;
+}
+.big-eclipse {
+	top: -20%;
+	right: -10%;
+	width: 700px;
+}

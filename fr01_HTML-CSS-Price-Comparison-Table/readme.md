@@ -1,4 +1,4 @@
-# FR02 Price comparison table
+# FR01 Price comparison table
 
 Original: [Web Dev Simplified](https://youtu.be/M_bhZEY6_kM?t=20)
 
