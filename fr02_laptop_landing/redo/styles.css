@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --fc-base: #555;
+}
+header{
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.logo-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  color: var(--fc-base);
+}
+.logo-container img {
+  margin-right: 5px;
+}
+.nav {
+  flex-grow: 2;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.nav-list a {
+  text-decoration: none;
+  color: var(--fc-base);
+  font-size: 1.2rem;
+}
+.cart {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.presentation {
+  display: flex;
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.desc {
+  flex: 1;
+  color: var(--fc-base);
+}
+.desc-text h1 {
+  font-size: 2rem;
+  background: linear-gradient(to right, #494964 0%, #6f6f89 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.desc-text p {
+  margin-top: 10px;
+}
+
+.showcase {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-display: column;
+}
+.desc-cta{
+  padding-top: 50px;
+}
+.desc-cta button {
+  border: 2px solid #C36CBB;
+  width: 150px;
+  height: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  
+}
+
+.cta-select{
+  background-color: transparent;
+  color: #C36CBB;
+}
+.cta-add {
+  background-color: #C36CBB;
+  color: white;
+  margin-left: 30px;
+}
+
+.intro {
+  flex: 1;
+}
+
+.cover{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+
+  filter: drop-shadow(0 5px 3px #222)
+}
+.dots {
+  /* position: absolute;
+  right: 20%; */
+}
+.big-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+  height: 80%;
+}
+
+.mid-circle {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  z-index: -1;
+  opacity: 0.4;
+  height: 60%;
+}
+
+.small-circle {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  z-index: -1;
+  opacity: 0.35;
+}
+
+.dots{
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 20%;
+}
