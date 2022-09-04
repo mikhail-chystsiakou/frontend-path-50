@@ -1,0 +1,176 @@
+
+/* ================ VARIABLES ================ */
+:root {
+  --fc-p-red: hsl(12, 88%, 59%);
+  --fc-p-blue: hsl(228, 39%, 23%);
+  --fc-s-gray-blue: hsl(227, 12%, 61%);
+  --fc-s-dark-blue: hsl(233, 12%, 13%);
+  --fc-s-pale-red: hsl(13, 100%, 96%);
+  --fc-s-light-gray: hsl(0, 0%, 98%);
+  --ff: 'Be Vietnam Pro', sans-serif;
+  --fw-light: 400;
+  --fw-nomal: 500;
+  --fw-bold: 700;
+  --l-content-margin: 10%;
+}
+
+
+
+/* ========== COMMON SETTINS ========== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: solid; */
+}
+
+body {
+  background-color: #FAFAFA;
+  font-family: var(--ff);
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-secondary {
+  color: var(--fc-s-gray-blue);
+}
+
+/* ================ HEADER ================ */
+
+header,
+.desc-section,
+.features-section {
+  margin: 50px var(--l-content-margin);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-weight: var(--fw-bold);
+}
+.nav {
+  flex-grow: 1;
+  min-width: 350px;
+}
+.nav-ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+.nav-link {
+  color: var(--fc-p-blue);
+}
+
+.gs-button,
+.feature-num {
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: var(--fc-p-red);
+  font-family: var(--ff);
+}
+.gs-button {
+  width: 140px;
+  filter: drop-shadow(0 10px 6px rgba(0,0,0,0.15))
+}
+
+.header-logo-c {
+  margin-top: 5px;
+}
+
+.bg-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  overflow: hidden;
+  transform: translateY(-200px);
+  z-index: -1;
+}
+
+/* ================ DESCRIPTION SECTION ================ */
+
+.desc-section,
+.features-section  {
+  display: flex;
+  margin-top: 100px;
+  gap: 5%;
+}
+.desc-container,
+.desc-imgs-container {
+  flex-basis: 50%;
+}
+.desc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.desc-heading {
+  color: var(--fc-p-blue);
+  font-size: 3rem;
+}
+.desc-container p {
+  padding-right: 30%;
+}
+.desc-imgs-container {
+  display: flex;
+  align-items: center;
+}
+.desc-imgs {
+  width: 100%;
+}
+/* ================ FEATURES SECTION ================ */
+.features-desc,
+.features-list {
+  flex-basis: 50%;
+}
+
+
+.features-desc > h2 {
+  color: var(--fc-p-blue);
+  font-size: 2rem;
+}
+.features-desc > p {
+  margin-top: 30px;
+  padding-right: 30%;
+}
+.feature {
+  display: flex;
+  gap: 10px;
+}
+.feature-num {
+  background-color: var(--fc-p-red);
+  width: 50px;
+  /* flex-shrink: 0; */
+}
+.feature-desc {
+  /* flex-grow: 1; */
+}
+
+/* ================ TESTIMONIALS SECTION ================ */
+
+/* ================ CTA SECTION ================ */
+
+
+/* ================ FOOTER ================ */
+
+
+/* ================ MEDIA ================ */
+@media only screen and (max-width: 375px) {
+  header {
+    flex-direction: column;
+    /* background-color: black; */
+  }
+}
