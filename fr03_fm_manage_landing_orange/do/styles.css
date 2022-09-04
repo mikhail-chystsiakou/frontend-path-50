@@ -25,7 +25,7 @@
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: white;
   font-family: var(--ff);
 }
 
@@ -41,11 +41,17 @@ a {
   color: var(--fc-s-gray-blue);
 }
 
+h2 {
+  color: var(--fc-p-blue);
+  font-size: 2rem;
+}
+
 /* ================ HEADER ================ */
 
 header,
 .desc-section,
-.features-section {
+.features-section,
+.testimonials-section {
   margin: 50px var(--l-content-margin);
 }
 
@@ -68,6 +74,9 @@ header {
 }
 .nav-link {
   color: var(--fc-p-blue);
+}
+.nav-link:hover {
+  color: var(--fc-s-gray-blue);
 }
 
 .gs-button,
@@ -137,36 +146,158 @@ header {
   flex-basis: 50%;
 }
 
-
-.features-desc > h2 {
-  color: var(--fc-p-blue);
-  font-size: 2rem;
-}
 .features-desc > p {
   margin-top: 30px;
   padding-right: 30%;
 }
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .feature {
   display: flex;
   gap: 10px;
 }
+
 .feature-num {
   background-color: var(--fc-p-red);
-  width: 50px;
-  /* flex-shrink: 0; */
+  width: 70px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.feature-desc {
-  /* flex-grow: 1; */
+.feature-desc > h3 {
+  margin-top: 10px;
+}
+.feature-desc > p {
+  margin-top: 30px;
 }
 
 /* ================ TESTIMONIALS SECTION ================ */
 
-/* ================ CTA SECTION ================ */
+.testimonials-section > h2 {
+  text-align: center;
+}
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
 
+.testimonial {
+  background-color: var(--fc-s-light-gray);
+  position: relative;
+  padding: 80px 30px 30px;
+  margin-top: 80px;
+  text-align: center;
+}
+.testimonial > img {
+  width: 60px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quote {
+  white-space: pre-line;
+}
+.quote::before {
+  content: "“";
+}
+.quote::after {
+  content: "”"
+}
+.gs-testimonials {
+  margin: 50px auto;
+  text-align: center;
+}
+/* ================ CTA SECTION ================ */
+.simplify-cta {
+  display: flex;
+  background-image: url('images/bg-simplify-section-desktop.svg');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  align-items: center;
+  margin-top: 100px;
+  padding: 50px var(--l-content-margin);
+  background-color: var(--fc-p-red);
+
+}
+.simplify-cta h2 {
+  color: white;
+}
+.spacer {
+  flex-grow: 1;
+}
+
+.simplify-cta .gs-button {
+  color: var(--fc-p-red);
+  background-color: white;
+}
 
 /* ================ FOOTER ================ */
+footer {
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px var(--l-content-margin);
+}
+.footer-logo {
+  color: white;
+}
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-social:hover {
+  cursor: pointer;
+}
+.footer-images {
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  font-size: 0.8rem;
+  font-weight: var(--fw-light);
+}
+.footer-nav-list a {
+  color: white;
+}
+.footer-nav-list a:hover {
+  color: var(--fc-p-red);
+}
+.footer-inbox-rights {
+  display: flex;
+  flex-direction: column;
+}
+.input-email {
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 10px;
+  width: 220px;
+}
+.footer-inbox-rights .gs-button {
+  width: 60px;
+}
 
+.copyright {
+  font-size: 0.8rem;
+  text-align: right;
+}
 
+button:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+}
 /* ================ MEDIA ================ */
 @media only screen and (max-width: 375px) {
   header {
