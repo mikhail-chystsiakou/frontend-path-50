@@ -1,0 +1,72 @@
+.section_coaches {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--section-gap);
+}
+
+.coaches__carousel {
+  margin-top: 60px;
+}
+
+.carousel__content {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+
+.coach__photo {
+  flex-basis: 50%;
+}
+.coach__img {
+  width: 100%;
+}
+
+.coach__desc {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.coach__name {
+  position: relative;
+}
+.coach__underline {
+  position: absolute;
+  z-index: -1;
+  left: -30px;
+  bottom: -12px;
+  width: 310px;
+}
+
+.carousel__right {
+  flex-basis: 10%;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  transition: margin-top 0.5s;
+}
+
+.carousel__right:hover {
+  margin-top: 10px;
+  transition: margin-top 0.5s;
+}
+
+.carousel__right_gold,
+.carousel__right_black {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel__right_gold {
+  top: 51%;
+}
+
+.carousel__buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}

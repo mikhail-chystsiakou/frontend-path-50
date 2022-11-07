@@ -1,0 +1,107 @@
+:root {
+  --ff-main: 'Montserrat';
+
+  --fs-header_lg: 60px;
+  --fs-header: 30px;
+  --fs-header_md: 25px;
+  --fs-header_sm: 20px;
+  --fs-regular: 20px;
+  --fs-regular_md: 15px;
+  --fs-regular_sm: 12px;
+  --fs-subtext: 12px;
+
+  --fw-bold: 700;
+  --fw-semi-bold: 500;
+  --fw-regular: 400;
+}
+
+
+.f-header {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-header);
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.f-header-big {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-header_lg);
+  line-height: 3.8rem;
+  text-transform: uppercase;
+  color: #000000;  
+}
+
+
+.f-header-medium {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-header_md);
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+} 
+
+.f-header-small {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-header_sm);
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+}
+
+.f-regular {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-regular);
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.f-regular-small,
+.f-regular-medium {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-regular);
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.f-regular-medium {
+  font-size: var(--fs-regular_md);
+}
+.f-regular-small {
+  font-size: var(--fs-regular_sm);
+}
+
+.nav__link {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-regular_sm);
+  text-transform: uppercase;
+}
+
+.f-uppercase {
+  text-transform: uppercase;
+}
+
+.f-subscript {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-subtext);
+  line-height: 18px;
+}
+
+.f-center {
+  text-align: center;
+}
+
+.f-bold {
+  font-weight: 700;
+}
+
+.f-white {
+  color: white;
+}

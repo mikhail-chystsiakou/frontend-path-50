@@ -1,0 +1,97 @@
+.section_targets {
+  margin-top: var(--section-gap);
+  --stairs-solo-height: 340px;
+  --stairs-solo-top: 150px;
+}
+
+.targets__poster {
+  height: 640px;
+  position: relative;
+}
+
+.stairs-solo__black,
+.stairs-solo__gold,
+.stairs-solo__img_new,
+.stairs-solo__img_normal,
+.stairs-solo__img_pro,
+.stairs-solo__img_pro_speeds,
+.stairs-family__black,
+.stairs-family__gold,
+.stairs-family__img_family,
+.targets__desc_children,
+.targets__desc_family,
+.target-desc
+ {
+  position: absolute;
+} 
+
+.stairs-solo__black {
+  top: var(--stairs-solo-top);
+  left: 0px;
+  height: var(--stairs-solo-height);
+}
+.stairs-solo__gold {
+  top: calc(var(--stairs-solo-top) + 10px);
+  left: 12px;
+  height: var(--stairs-solo-height);
+}
+.stairs-family__black {
+  /* bottom: -45px; */
+  bottom: 0px;
+  right: 15px;
+}
+.stairs-family__gold {
+  /* bottom: -60px; */
+  bottom: -15px;
+  right: 0;
+}
+
+.stairs-solo__img_new {
+  top: 300px;
+  left: 80px;
+}
+.targets__desc_new {
+  top: 420px;
+  left: 70px;
+}
+
+.stairs-solo__img_normal {
+  top: 150px;
+  left: 320px;
+}
+.targets__desc_normal {
+  top: 300px;
+  left: 360px;
+}
+
+.stairs-solo__img_pro {
+  top: 50px;
+  left: 720px;
+}
+
+.targets__desc_pro {
+  top: 200px;
+  left: 670px;
+}
+
+.stairs-solo__img_pro_speeds {
+  top: 55px;
+  left: 630px;
+}
+
+.stairs-family__img_family {
+  top: 440px;
+  left: 400px;
+}
+.targets__desc_children {
+  top: 350px;
+  left: 750px;
+}
+.targets__desc_family {
+  top: 480px;
+  left: 620px;
+}
+
+.target-desc .f-regular-medium {
+  margin-top: 10px;
+}

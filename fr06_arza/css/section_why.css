@@ -1,0 +1,48 @@
+.section_why {
+  display: flex;
+  gap: 10%;
+  flex-direction: row;
+  margin-top: var(--section-gap);
+}
+
+.why__left {
+  flex-basis: 30%;
+}
+.why__right {
+  flex-basis: 60%;
+  position: relative;
+}
+
+.why__video {
+  width: 100%;
+}
+
+.why__items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  gap: 40px;
+}
+.why__item {
+  display: flex;
+  gap: 40px;
+}
+.item__mark {
+  position: relative;
+}
+.mark_gold {
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  z-index: -1;
+}
+.list-item__text {
+  display: flex;
+  align-items: center;
+}
+
+.why__join_button {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}

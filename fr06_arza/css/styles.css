@@ -1,0 +1,167 @@
+/* ===== NORMALIZATION ===== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  /* outline: 1px solid; */
+}
+
+:root {
+  --container-width: 1100px;
+  --section-gap: 90px;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.no_list {
+  list-style: none;
+}
+
+.a-soar {
+  animation: soaring 2s ease-in-out infinite;
+}
+
+.a-delay {
+  animation-delay: 1000ms;
+}
+.full-height {
+  height: 100%;
+}
+
+
+@keyframes soaring {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes waving {
+  0% {
+    transform:perspective()
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ===== GENERAL LAYOUT ===== */
+
+.full-bleed-container {
+  display: grid;
+  grid-template-columns: 1fr var(--container-width) 1fr;
+}
+
+.header, main {
+  grid-column: 2;
+}
+
+.bottom-trees, footer {
+  grid-column: 1/4;
+}
+
+/* ====== HEADER ====== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.header__nav {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  height: 100%;
+}
+
+.nav__link {
+  list-style: none;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* === SECTION MAIN === */
+
+.section_main {
+  display: flex;
+  gap: 10%;
+}
+
+.main__left {
+  flex-basis: 30%;
+}
+
+.main__right {
+  flex-basis: 60%;
+}
+
+.main__run_school {
+  margin: 30px 0;
+}
+
+
+.main__right img {
+  width: 100%;
+}
+
+.main__clubname {
+  margin-block: 30px;
+}
+
+.main__founder_name {
+  margin-bottom: 10px;
+}
+
+.founder__underline {
+  position: relative;
+  width: 300px;
+  margin-top: -8px;
+  margin-left: -10px;
+  z-index: -1;
+}
+
+.join_button {
+  position: relative;
+}
+
+.main__join_button {
+  margin-top: 50px;
+}
+
+.join_button__black {
+  width: 220px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.join_button__gold {
+  position: absolute;
+  width: 220px;
+  height: 50px;
+  top: -10px;
+  left: 10px;
+  background: gold; 
+  z-index: -1;
+}
+
+.main__join_desc {
+  margin-top: 5px;
+}
