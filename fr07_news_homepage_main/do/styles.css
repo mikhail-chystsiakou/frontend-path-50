@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  /* outline: 1px solid; */
+}
+img {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --ff-main: 'Inter';
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  --fs-header_lg: 2rem;
+  --fs-header_md: 1.8rem;
+  --fs-header_sm: 1.5rem;
+  --fs-regular: 1rem;
+}
+
+* {
+  font-family: var(--ff-main);
+}
+
+.container {
+  display: grid;
+  width: 1140px;
+  margin: 80px auto;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0;
+  }
+}

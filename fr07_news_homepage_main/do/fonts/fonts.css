@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  src: url('/fonts/static/Inter-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-weight: 800;
+  src: url('/fonts/static/Inter-ExtraBold.ttf') format('truetype');
+}
+
+.f-capitalize {
+  text-transform: capitalize;
+}
