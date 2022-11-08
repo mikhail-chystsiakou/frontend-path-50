@@ -36,6 +36,10 @@ a {
   height: 100%;
 }
 
+.e-shadow {
+  /* filter: drop-shadow(3px 3px 5px black); */
+}
+
 
 @keyframes soaring {
   0% {
@@ -138,6 +142,7 @@ a {
 
 .join_button {
   position: relative;
+  cursor: pointer;
 }
 
 .main__join_button {
@@ -163,5 +168,5 @@ a {
 }
 
 .main__join_desc {
-  margin-top: 5px;
+  margin-top: 10px;
 }

@@ -43,7 +43,7 @@
           <div class="f-regular">чемпионка мира и европы </div>
           <div class="f-regular">финалистка двух <br>олимпиад</div>
 
-          <div class="main__join_button join_button">
+          <div class="main__join_button join_button a-soar">
             <div class="join_button__black f-header-small">Записаться</div>
             <div class="join_button__gold"></div>
           </div>
@@ -53,7 +53,7 @@
             стоимость - 15 BYN
           </div>
         </div>
-        <div class="main__right">
+        <div class="main__right e-shadow">
           <img src="img/main__marina.png" alt="Марина Арзамасова">
         </div>
 
@@ -61,7 +61,10 @@
 
       <section class="section_why">
         <div class="why__left">
-          <img class="why__video" src="img/why__training_video.png" alt="Видео с тренировки">
+          <video class="why__video e-shadow" autoplay loop muted>
+            <source src="video/marina.MOV"/>
+          </video>
+          <!-- <img class="why__video" src="img/why__training_video.png" alt="Видео с тренировки"> -->
         </div>
 
         <div class="why__right">
@@ -69,7 +72,7 @@
 
           <div class="why__items">
             <div class="why__item">
-              <div class="item__mark a-soar">
+              <div class="item__mark">
                 <img class="mark__img" src="img/checkmark_black.png">
                 <img class="mark__img mark_gold" src="img/checkmark_gold.png">
               </div>
@@ -79,7 +82,7 @@
             </div>
             
             <div class="why__item">
-              <div class="item__mark a-soar">
+              <div class="item__mark">
                 <img class="mark__img" src="img/checkmark_black.png">
                 <img class="mark__img mark_gold" src="img/checkmark_gold.png">
               </div>
@@ -89,7 +92,7 @@
             </div>
             
             <div class="why__item">
-              <div class="item__mark a-soar">
+              <div class="item__mark">
                 <img class="mark__img" src="img/checkmark_black.png">
                 <img class="mark__img mark_gold" src="img/checkmark_gold.png">
               </div>
@@ -99,7 +102,7 @@
             </div>
           </div>
 
-          <div class="why__join_button join_button">
+          <div class="why__join_button join_button a-soar">
             <div class="join_button__black f-header-small">Записаться</div>
             <div class="join_button__gold"></div>
           </div>
@@ -154,30 +157,68 @@
         <h2 class="f-header f-center">Тренерский состав</h2>
 
         <div class="coaches__carousel">
+          <div class="carousel__button carousel__left a-soar" data-carousel_button="prev">
+            <img class="carousel__left_gold" src="img/carousel__left_gold.svg"/>
+            <img class="carousel__left_black" src="img/carousel__left_black.svg"/>
+          </div>
           <div class="carousel__content">
-            <div class="coach__photo">
-              <img class="coach__img" src="img/coach__marina.png" alt="Марина Арзамасова">
+            <div class="carousel__item" data-active>
+              <div class="coach__photo e-shadow">
+                <img class="coach__img" src="img/coach__marina.png" alt="Марина Арзамасова">
+              </div>
+              <div class="coach__desc">
+                <div class="f-header-small coach__name">Марина Арзамасова<img src="img/underline.png" class="coach__underline"/></div>
+                <p class="f-regular">Золотая медаль Чемпионата Мира и Золотая медаль Чемпионата Европы в беге на 800м</p>
+                <p class="f-regular">Заслуженный мастер спорта Республики Беларусь</p>
+                <p class="f-regular">
+                  Участница Олимпиады в Лондоне 2012<br>
+                  Финалистка Олимпиады в Рио-де-Жанейро 2016
+                </p>
+                <p class="f-regular">Многократная Победительница и призёр международных и республиканских соревнований по легкой атлетике</p>
+              </div>
             </div>
-            <div class="coach__desc">
-              <div class="f-header-small coach__name">Марина Арзамасова<img src="img/underline.png" class="coach__underline"/></div>
-              <p class="f-regular">Золотая медаль Чемпионата Мира и Золотая медаль Чемпионата Европы в беге на 800м</p>
-              <p class="f-regular">Заслуженный мастер спорта Республики Беларусь</p>
-              <p class="f-regular">
-                Участница Олимпиады в Лондоне 2012<br>
-                Финалистка Олимпиады в Рио-де-Жанейро 2016
-              </p>
-              <p class="f-regular">Многократная Победительница и призёр международных и республиканских соревнований по легкой атлетике</p>
+
+            <div class="carousel__item">
+              <div class="coach__photo e-shadow">
+                <img class="coach__img" src="img/coach__veronika.png" alt="Марина Арзамасова">
+              </div>
+              <div class="coach__desc">
+                <div class="f-header-small coach__name">Вероника Сенько<img src="img/underline.png" class="coach__underline"/></div>
+                <p class="f-regular">Золотая медаль Чемпионата Мира и Золотая медаль Чемпионата Европы в беге на 800м</p>
+                <p class="f-regular">Заслуженный мастер спорта Республики Беларусь</p>
+                <p class="f-regular">
+                  Участница Олимпиады в Лондоне 2012<br>
+                  Финалистка Олимпиады в Рио-де-Жанейро 2016
+                </p>
+                <p class="f-regular">Многократная Победительница и призёр международных и республиканских соревнований по легкой атлетике</p>
+              </div>
             </div>
-            <div class="carousel__right a-soar">
-              <img class="carousel__right_gold" src="img/carousel__right_gold.svg"/>
-              <img class="carousel__right_black" src="img/carousel__right_black.svg"/>
+            
+            <div class="carousel__item">
+              <div class="coach__photo e-shadow">
+                <img class="coach__img" src="img/ilya.jfif" alt="Марина Арзамасова">
+              </div>
+              <div class="coach__desc">
+                <div class="f-header-small coach__name">Илья Арзамасов<img src="img/underline.png" class="coach__underline"/></div>
+                <p class="f-regular">Золотая медаль Чемпионата Мира и Золотая медаль Чемпионата Европы в беге на 800м</p>
+                <p class="f-regular">Заслуженный мастер спорта Республики Беларусь</p>
+                <p class="f-regular">
+                  Участница Олимпиады в Лондоне 2012<br>
+                  Финалистка Олимпиады в Рио-де-Жанейро 2016
+                </p>
+                <p class="f-regular">Многократная Победительница и призёр международных и республиканских соревнований по легкой атлетике</p>
+              </div>
             </div>
           </div>
+          <div class="carousel__button carousel__right a-soar" data-carousel_button="next">
+            <img class="carousel__right_gold" src="img/carousel__right_gold.svg"/>
+            <img class="carousel__right_black" src="img/carousel__right_black.svg"/>
+          </div>
 
-          <div class="carousel__buttons">
-            <img class="carousel__button" src="img/carousel__button_gold.png"/>
-            <img class="carousel__button" src="img/carousel__button_black.png"/>
-            <img class="carousel__button" src="img/carousel__button_black.png"/>
+          <div class="carousel__dots">
+            <img class="carousel__dot" src="img/carousel__dot_gold.png"/>
+            <img class="carousel__dot" src="img/carousel__dot_black.png"/>
+            <img class="carousel__dot" src="img/carousel__dot_black.png"/>
           </div>
         </div>
           
