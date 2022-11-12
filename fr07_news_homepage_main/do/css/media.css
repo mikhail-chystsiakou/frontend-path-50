@@ -1,0 +1,44 @@
+
+/* === MEDIA === */
+
+/* === DESKTOP === */
+@media screen and (min-width: 750px) {
+  .container {
+    width: min(100vw, var(--wmax-container));
+    margin: 0 auto;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-areas: 
+    "main main new"
+    "main main new"
+    ". . .";
+    margin-top: 2rem;
+  }
+  .section_main {
+    grid-area: main;
+    margin-top: 0;
+  }
+  .new {
+    grid-area: new;
+    margin-top: 0;
+  }
+  .articles {
+    display: contents;
+    margin-top: 0;
+  }
+  .articles__article {
+    margin-top: 0;
+  }
+  .main__desc {
+    display: flex;
+    gap: 2rem;
+  }
+  .main__header {
+    min-width: 200px;
+  }
+}

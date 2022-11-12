@@ -1,18 +1,50 @@
 @font-face {
   font-family: 'Inter';
+  font-weight: 100 900;
   src: url('/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
 }
-@font-face {
-  font-family: 'Inter';
-  font-weight: 700;
-  src: url('/fonts/static/Inter-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Inter';
-  font-weight: 800;
-  src: url('/fonts/static/Inter-ExtraBold.ttf') format('truetype');
+
+:root {
+  --ff-main: 'Inter';
+  --fw-regular: 400;
+  --fw-regular_md: 500;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  --fs-header_xl: 3rem;
+  --fs-header_lg: 2rem;
+  --fs-header_md: 1.2rem;
+  --fs-header_sm: 1.5rem;
+  --fs-regular: 1rem;
 }
 
 .f-capitalize {
   text-transform: capitalize;
+}
+
+.f-header_xl {
+  font-size: var(--fs-header_xl);
+  font-weight: var(--fw-extra-bold);
+  background: linear-gradient( 
+    var(--c-blue_darkest) 0%,
+    var(--c-blue_violet) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.f-header {
+  font-size: var(--fs-header_lg);
+  font-weight: var(--fw-bold);
+  color: var(--c-stress_text);
+}
+
+.f-header_sm {
+  font-size: var(--fs-header_md);
+  font-weight: var(--fw-bold);
+}
+
+.f-regular {
+  color: var(--c-blue_dark);
+  font-weight: var(--fw-regular_md);
 }

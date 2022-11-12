@@ -1,0 +1,71 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  /* outline: 1px solid; */
+}
+html {
+  font-size: 15px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --c-white: hsl(36, 100%, 99%);
+  --c-blue_light: hsl(237, 38%, 90%);
+  --c-blue: hsl(233, 8%, 79%);
+  --c-blue_dark: hsl(236, 13%, 42%);
+  --c-blue_darkest: hsl(240, 100%, 5%);
+  --c-blue_violet: hsl(235, 46%, 38%);
+  --c-stress: hsl(4, 88%, 60%);
+  --c-stress_text: hsl(32, 80%, 61%);
+
+  --wmax-container: 1140px;
+}
+
+* {
+  font-family: var(--ff-main);
+}
+
+/* === UTILITY === */
+.shadow-box.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* === MAIN CONTAINER === */
+.shadow-box {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background-color: rgba(20,20,50,0.48);
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0.5s, opacity 0.5s;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  margin: 0;
+}

@@ -9,16 +9,20 @@
   <link href="/fonts/static/Inter-Bold.ttf" type="font/ttf" rel="preload" as="font" crossorigin>
   <link href="/fonts/static/Inter-ExtraBold.ttf" type="font/ttf" rel="preload" as="font" crossorigin>
   <link rel="stylesheet" href="fonts/fonts.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/articles.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="js/index.js"></script>
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <img src="images/logo.svg" alt="logo" class="header__logo">
-      <img src="images/icon-menu.svg" alt="menu" class="header__menu-icon_open">
+      <a href="#"><img src="images/logo.svg" alt="logo" class="header__logo"></a>
+      <img src="images/icon-menu.svg" alt="menu" class="header__icon-menu_open" data-menu-action="open">
       <div class="nav__curtain">
-        <img src="images/icon-menu-close.svg" alt="menu" class="header__menu-icon_close">
+        <img src="images/icon-menu-close.svg" alt="menu" class="header__icon-menu_close" data-menu-action="close">
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__item">Home</li>
@@ -30,9 +34,80 @@
         </nav>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section class="section_main">
+        <picture>
+          <source media="(min-width: 500px)" srcset="images/image-web-3-desktop.jpg">
+          <img src="images/image-web-3-mobile.jpg" alt="The bright future of Web 3.0" class="main__img">
+        </picture>
+        <div class="main__desc">
+          <h1 class="main__header f-header_xl">The Bright Future of Web 3.0?</h1>
+          <div class="flex-2x">
+            <p class="main__text f-regular">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+            </p>
+            <a href="#" class="main__more_btn button f-regular">
+              Read more
+            </a>
+          </div>
+        </div>
+      </section>
+      <aside class="new">
+        <a href="#">
+        <h2 class="new__header f-header">New</h2>
+        </a>
+        <article class="new__article">
+          <a href="#">
+          <h3 class="article__header f-header_sm">Hydrogen VS Electric Cars</h3>
+          </a>
+          <p class="article__desc f-regular">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <article class="new__article">
+          <a href="#">
+            <h3 class="article__header f-header_sm">The Downsides of AI Artistry</h3>
+          </a>
+          <p class="article__desc f-regular">What are the possible adverse effects of on-demand AI image generation?</p>
+        </article>
+        <article class="new__article">
+          <a href="#">
+          <h3 class="article__header f-header_sm">Is VC Funding Drying Up?</h3>
+          </a>
+          <p class="article__desc f-regular">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </article>
+      </aside>
+      <section class="articles">
+        <article class="articles__article">
+          <img src="images/image-retro-pcs.jpg" alt="retro picture" class="article__img">
+
+          <h2 class="article__number f-header">01</h2>
+          <a href="#">
+            <h3 class="article__header f-header_sm">Reviving Retro PCs</h3>
+          </a>
+          <p class="article__desc f-regular">What happens when old PCs are given modern upgrades?</p>
+        </article>
+        <article class="articles__article">
+          <img src="images/image-top-laptops.jpg" alt="retro picture" class="article__img">
+
+          <h2 class="article__number f-header">01</h2>
+          <a href="#">
+            <h3 class="article__header f-header_sm">Top 10 Laptops of 2022</h3>
+          </a>
+          <p class="article__desc f-regular">Our best picks for various needs and budgets.</p>
+        </article>
+        <article class="articles__article">
+          <img src="images/image-gaming-growth.jpg" alt="retro picture" class="article__img">
+
+          <h2 class="article__number f-header">01</h2>
+          <a href="#">
+            <h3 class="article__header f-header_sm">The Growth of Gaming</h3>
+          </a>
+          <p class="article__desc f-regular">How the pandemic has sparked fresh opportunities.</p>
+        </article>
+      </section>
+    </main>
     <footer class="footer"></footer>
   </div>
+  <div class="shadow-box hidden" id="shadowBox"></div>
   
 </body>
 </html>
