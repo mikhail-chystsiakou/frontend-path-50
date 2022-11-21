@@ -1,0 +1,11 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@import url(media_576.css);
+
+
+/* For medium devices */
+@import url(media_768.css);
+
+/* For large devices */
+@import url(media_1024.css);
+@import url(media_1180.css);

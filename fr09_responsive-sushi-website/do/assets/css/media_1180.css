@@ -1,0 +1,20 @@
+@media screen and (min-width: 1180px) {
+  .container {
+    max-width: 1024px;
+    margin-inline: auto;
+  }
+  .home__leaf_2,
+  .home__leaf_1 {
+    width: 120px;
+  }
+  .header__nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .footer__onion {
+    top: 12rem;
+    right: 20rem;
+  }
+  .footer__cards {
+    order: 1;
+  }
+}

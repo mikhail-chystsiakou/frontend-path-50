@@ -12,3 +12,17 @@
 💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
 
 ![preview img](/preview.png)
+
+
+
+## Lessons learned
+
+* Sushi image at the top is interesting.
+
+  * positioned absolutely
+  * stuck to the right:0
+  * centered vertically via top:50% + translateY(-50%)
+  * scaled to overflow container
+  * not cut because of large padding of nearest relatively-positioned parent
+
+  ![sushi_top_image](D:\workspace\html\frontend-path-50\fr09_responsive-sushi-website\do\doc\sushi_top_image.gif)

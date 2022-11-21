@@ -1,0 +1,34 @@
+@media screen and (min-width: 768px) {
+  .header {
+    gap: 50px;
+  }
+  /* header navigation */
+  .header__menu {
+    margin-left: auto;
+    width: auto;
+    position: relative;
+    top: auto;
+    filter: none;
+    padding-block: 0;
+    transition: none;
+    box-shadow: none;
+  }
+  .nav__leaf-1,
+  .nav__leaf-2,
+  .header__menu_btn {
+    display: none;
+  }
+  .nav__close_btn {
+    display: none;
+  }
+  .nav__list {
+    flex-direction: row;
+    gap: var(--gap);
+  }
+  .popular__dishes {
+    grid-template-columns: repeat(2, 260px);
+  }
+  .footer__links {
+    grid-template-columns: repeat(4, max-content);
+  }
+}
