@@ -2,10 +2,10 @@
 
 Original: [Responisve Sushi Website | Bedimcode](https://youtu.be/HW1zt2EPMqY)
 
-|                       Goal                       | Do                                               |
-| :----------------------------------------------: | ------------------------------------------------ |
-| <img src="doc/design.png" style="width:300px" /> | <img src="doc/result.png" style="width:300px" /> |
-|                 Date: 21.11.2022                 | Time: **~8h**                                    |
+|                     Goal                     | Do                                           |
+| :------------------------------------------: | -------------------------------------------- |
+| <img src="design.png" style="width:300px" /> | <img src="result.png" style="width:300px" /> |
+|               Date: 21.11.2022               | Time: **~8h**                                |
 
 
 
