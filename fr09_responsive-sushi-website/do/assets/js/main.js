@@ -3,9 +3,9 @@ function DOMLoaded() {
   const menuOpenBtn = document.getElementsByClassName('header__menu_btn')[0]
   const menuItems = document.querySelectorAll('.nav__link')
   
-  menuCloseBtn.addEventListener('click', toggleMenuHandler)
-  menuOpenBtn.addEventListener('click', toggleMenuHandler)
-  menuItems.forEach(i => i.addEventListener('click', toggleMenuHandler))
+  menuCloseBtn.addEventListener('click', buildToggleMenuHandler(false))
+  menuOpenBtn.addEventListener('click', buildToggleMenuHandler(true))
+  menuItems.forEach(i => i.addEventListener('click', buildToggleMenuHandler(false)))
 
   window.addEventListener('scroll', toggleMenuShadowOnScroll)
   window.addEventListener('scroll', toggleScrollUpOnScroll)
@@ -20,9 +20,11 @@ if (document.readyState == 'loading') {
 }
 
 /*=============== SHOW MENU ===============*/
-function toggleMenuHandler(e) {
+function buildToggleMenuHandler(isOpen) {
   const headerMenu = document.getElementsByClassName('header__menu')[0]
-  headerMenu.classList.toggle('active')
+  console.log(isOpen)
+  return isOpen ? () =>headerMenu.classList.add('active')
+                : () => headerMenu.classList.remove('active')
 }
 function toggleMenuShadowOnScroll(_) {
   const header = document.getElementsByClassName('header')[0]

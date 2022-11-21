@@ -103,13 +103,13 @@ body.dark-theme {
     Color changes in some parts of 
     the website, in light theme
 ==========*/
-.dark-theme .header, 
-.dark-theme .header__menu, 
+.dark-theme .header.shadow, 
+.dark-theme .header__menu.active, 
 .dark-theme .scroll_up {
   box-shadow: 0 2px 8px hsla(19, 64%, 4%, .5);
 }
 
-.dark-theme .popular__card {
+.dark-theme .popular__dish {
   box-shadow: 0 8px 20px hsla(19, 64%, 4%, .2);
 }
 
@@ -213,6 +213,7 @@ body.dark-theme {
 }
 .header__menu.active {
   top: 0;
+  box-shadow: 0 5px 10px hsla(90, 20%, 80%, .4);
 }
 
 .nav__close_btn {
@@ -441,8 +442,9 @@ body.dark-theme {
   text-align: center;
   position: relative;
   padding-block: 7.5rem 1rem;
-  background-color: hsl(20, 100%, 97%);
+  background-color: var(--container-color);
   border-radius: 10px;
+  transition: background-color .4s, box-shadow .4s;
 }
 .dish__img {
   position: absolute; 
@@ -483,7 +485,7 @@ body.dark-theme {
   align-items: center;
   padding: .4rem;
   font-size: var(--h3-font-size);
-  /* box-shadow: ; */
+  box-shadow: 0 4px 20px hsl(19deg 64% 20% / 20%);;
   cursor: pointer;
   transition: transform .1s, background-color .3s;
 }
@@ -696,7 +698,7 @@ body.dark-theme {
   background-color: var(--body-color);
   box-shadow: 0 4px 12px hsl(19 ,64% ,24%, .1);
   cursor: pointer;
-  transition: bottom .3s;
+  transition: bottom .3s, background-color .3s;
 }
 .scroll_up.active {
   bottom: 3rem;

@@ -10,7 +10,7 @@
     top: auto;
     filter: none;
     padding-block: 0;
-    transition: none;
+    transition: background .4s, box-shadow .4s;
     box-shadow: none;
   }
   .nav__leaf-1,

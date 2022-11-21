@@ -6,8 +6,9 @@ Mastering HTML+CSS by doing 50 live-coding youtube projects.
 2. Watch the video.
 3. **Redo**: Repeat the solution as it was done in the video without peeking.
 
-| No. Date            | Project folder                                               | Time        | Do                                                           | Demo                                                         |
+| No. Date            | Project                                                      | Time        | Result                                                       | Demo                                                         |
 | ------------------- | ------------------------------------------------------------ | ----------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 09<br />21.11.2022  | [Responsive Sushi Website](fr09_responsive-sushi-website)    | **~8h**     | <img src="fr09_responsive-sushi-website/result.png" style="width:300px" /> | [live demo](https://zoxal.github.io/frontend-path-50/fr09_responsive-sushi-website/do/) |
 | 08<br />10.11.2022  | [Youtube Clone](fr08_youtube_clone)                          | **~3h**     | <img src="fr08_youtube_clone/do/result.png" style="width:300px" /> | [live demo](https://zoxal.github.io/frontend-path-50/fr08_youtube_clone/do/) |
 | 07<br />10.11.2022  | [News homepage](fr07_new_homepage_main)                      | **~6h**     | <img src="fr07_news_homepage_main/do/result.png" style="width:300px" /> | [live demo](https://zoxal.github.io/frontend-path-50/fr07_news_homepage_main/do/) |
 | 06<br />07.11.2022  | [Arza running club](fr06_arza)                               | **~5h**     | <img src="fr06_arza/result.png" style="width:300px" />       | [live demo](https://mich.life/frontend-path-50/fr06_arza/)   |
